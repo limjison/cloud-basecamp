@@ -1,6 +1,7 @@
 #!/bin/bash
 APP_NAME=$1
-NEO=./target/sdk/tools/neo.sh pwd
+NEO=./target/sdk/tools/neo.sh
+pwd
 echo Deploying "$APP_NAME"
 $NEO deploy -a "$ACCOUNT" \
        -b "$APP_NAME" \
