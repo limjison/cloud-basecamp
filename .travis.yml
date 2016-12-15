@@ -5,4 +5,3 @@ after_script:
   - if [[ $TRAVIS_PULL_REQUEST == 'false' && $TRAVIS_BRANCH == 'master' ]]; then bash .travis/push production || exit $?; fi
 notifications:
   email: true
-  
